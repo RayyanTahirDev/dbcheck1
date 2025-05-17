@@ -16,7 +16,7 @@ const Login = () => {
   const { isAuth, btnLoading, error } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
-  if (isAuth) return redirect("/chart");
+  if (isAuth) return redirect("/demo");
 
   const submitHandler = (e) => {
     e.preventDefault();
